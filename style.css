@@ -5,4 +5,45 @@
 body {
     padding: 0;
     margin: 0 auto;
+    background-color: #DB324D;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+input[type='text'] {
+    width: 300px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border: 1px solid #000;
+    font-size: 16px;
+}
+
+.search-btn {
+    cursor: pointer;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border: 1px solid #000;
+    border-left: 0;
+}
+
+
+.random-btn {
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 2px;
+    border: 1px solid #000;
+}
+
+
