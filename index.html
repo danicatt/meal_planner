@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <script src="script.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <title>Meal Planner</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <h1>Meal Planner</h1>
+            <form class="form" id=form>
+                <div class="form-control">
+                    <input type="text" id="search" placeholder="Search for recipes" />
+                    <button class="search-btn" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <small>Error Message</small>
+                </div>
+            </form>
+            <button class="random-btn" id="random-btn">
+                <i class="fas fa-bread-slice"></i>
+            </button>
+    </div>
+    <div class="resultsMsg"></div>
+    <div id="resultsContainer" class="resultsContainer">
+        <div id="single-meal"></div>
+    </div>
+   
 </body>
+
 </html>
