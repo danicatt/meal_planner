@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 body {
     padding: 0;
     margin: 0 auto;
@@ -11,26 +13,42 @@ body {
 }
 
 .container {
+    background-color: #b82a41;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-bottom: 2%; 
 }
 
-.flex {
-    display: flex;
+.form-control small {
+    display: block;
+    color: #000;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    font-size: 20px;
+    padding: 4%
 }
+
+.form-control.error small {
+    visibility: visible;
+}
+
 
 input[type='text'] {
-    width: 300px;
+    position: relative;
+    width: 350px;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
     border: 1px solid #000;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .search-btn {
+    height: 27px;
+    position: absolute;
     cursor: pointer;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
@@ -46,4 +64,29 @@ input[type='text'] {
     border: 1px solid #000;
 }
 
+.resultsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 
+.resultsMsg {
+    text-align: center;
+}
+
+.meal {
+    cursor: pointer;
+}
+
+.meal img {
+    width: 98%;
+    border: 2px solid #000;
+}
+
+.meal-info {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+}
